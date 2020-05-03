@@ -1,0 +1,89 @@
+
+h1 {
+  text-align: center;
+  color: DarkGreen;
+}
+
+.chat-body {
+  border: 1px solid black;
+  background-color: lightblue;
+}
+
+.status {
+  color: red
+}
+
+.chat-title {
+  height: 150px;
+  text-align: center;
+}
+
+.display-area {
+  border: 1px solid black;
+  height: 450px;
+  background-color: LightCyan;
+  display: flex;
+}
+
+.user-area {
+  border: 1px solid black;
+  width: 20%;
+  background-color: Beige;
+  overflow: scroll;
+}
+
+.message-area {
+  border: 1px solid black;
+  width: 80%;
+  overflow: scroll;
+}
+
+.usernames {
+  color: green;
+}
+
+.ougoing {
+  border: 1px solid black;
+  height: 150px;
+}
+
+.message-row:hover {
+  background-color: PaleGreen;
+}
+
+.to-send {
+  width: 80%;
+  height: 50px;
+}
+
+.send-button {
+  width: 19%;
+  height: 50px;
+}
+
+.users {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+}
+
+.message:hover {
+  background-color: #BADA55;
+}
+
+.meta-info {
+  min-width: 100px;
+  background-color: lightgrey;
+  padding: 5px;
+}
