@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "* start from the up-to-date master branch (`git checkout master; git pull origin master`)\r * Create a feature branch named 'chat-spa' (`git checkout -b chat-spa`)\r * modify the files in this directory to have the require features\r * add, commit, and push the branch to github\r * Create a PR to merge to master\r * Be sure to include the TA(s) and I as reviewers.  \r * Due by 11:59pm (PT) Sun Mar 22",
   "main": "index.js",
+  "proxy": "http://localhost:5030",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

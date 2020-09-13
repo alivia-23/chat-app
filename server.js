@@ -1,7 +1,7 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
-const PORT = 3000;
+const PORT = 5030;
 
 const chats = require('./chats');
 const { v4: uuidv4 } = require('uuid');
@@ -90,4 +90,4 @@ app.post('/messages', express.json(), (req, res) => {
   res.json(chats.messages);
 });
 
-app.listen(PORT, () => console.log("Listening to http://localhost:3000"));
+app.listen(PORT, () => console.log(`Listening to http://localhost:${PORT}`));
