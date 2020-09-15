@@ -1,5 +1,5 @@
 {
-  "name": "rest-chat",
+  "name": "chat-app",
   "version": "1.0.0",
   "description": "* start from the up-to-date master branch (`git checkout master; git pull origin master`)\r * Create a feature branch named 'chat-spa' (`git checkout -b chat-spa`)\r * modify the files in this directory to have the require features\r * add, commit, and push the branch to github\r * Create a PR to merge to master\r * Be sure to include the TA(s) and I as reviewers.  \r * Due by 11:59pm (PT) Sun Mar 22",
   "main": "index.js",
@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack",
-    "start": "node server.js"
+    "start": "node ./node_modules/pm2/bin/pm2 start server.js --name chat-app",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop chat-app"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,8 @@
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
     "nodemon": "^2.0.2",
-    "uuid": "^7.0.2"
+    "uuid": "^7.0.2",
+    "pm2": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
