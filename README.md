@@ -1,16 +1,7 @@
 # Chat SPA
-
-* start from the up-to-date master branch (`git checkout master; git pull origin master`)
-* Create a feature branch named 'chat-spa' (`git checkout -b chat-spa`)
-* modify the files in this directory to have the require features
-* add, commit, and push the branch to github
-* Create a PR to merge to master
-* Be sure to include the TA(s) and I as reviewers.  
-* Due by 11:59pm (PT) Sun Mar 22
-
 ## Goals and Requirements
 
-You will have a multi-user chat application built with webpack
+Built a multi-user chat application built with webpack
 - that works as a SPA (only a single page load in the browser)
 - that requires a login (no password, but username "dog" is not allowed)
 - that has RESTful services and makes async calls to perform:
@@ -26,7 +17,7 @@ You will have a multi-user chat application built with webpack
 
 ### Program Structure
 
-- Use a node express server for the RESTful services
+- Used a node express server for the RESTful services
 - Serve a single static HTML file for the index.html
 - Serve a static CSS file(s) for styling
 - Serve a single static client-side JS file that is built with webpack and babel
@@ -91,11 +82,10 @@ You will have a multi-user chat application built with webpack
   - works for reasonable desktop browser sizes
   - is valid HTML/CSS (note "it works" is different than "is valid")
   - follows basic semantic principles
-- You may use data-set-X HTML attributes to hold identifiers for your data if needed
 
 ## Limitations
 
-- use these packages only, otherwise no external JS
+- used these packages only, otherwise no external JS
   - `express`
   - `cookie-parser`
   - the babel and webpack-related packages
@@ -103,22 +93,19 @@ You will have a multi-user chat application built with webpack
     - `webpack` and `webpack-cli`
     - `babel-loader`
   - `uuid`
-- Do not store your application state in your DOM, nor read it from the DOM
-- only make visual changes via:
+- Did not store your application state in your DOM, nor read it from the DOM
+- only made visual changes via:
   - Applying/removing a class
   - add/removing HTML
   - changing a `disabled` property
-- do not use HTTP redirects or JS-based page-load redirects
-- do not use localStorage/sessionStorage/IndexedDB 
-- do not use cookies other than the uid
-- do not use Map() or Set()
-- do not use async/await
-- do not use var or alert()
-- Follow the best practices from class for JS, CSS, HTML
-- Do NOT interact with the browser url, including hash fragment
-- Do NOT include files in your PR that are outside the assignment (no IDE configs, `node_modules/`, etc)
-* Do not use external CSS libraries
-* You may not use floats to do more than manage flowing text with images
-* You may not use HTML tables or CSS table layouts
-* You may not use CSS preprocessors, minifiers, or other tools to modify your CSS
+- did not use HTTP redirects or JS-based page-load redirects
+- did not use localStorage/sessionStorage/IndexedDB 
+- did not use cookies other than the uid
+- did not use Map() or Set()
+- did not use async/await
+- did not use var or alert()
+- Followed the best practices from class for JS, CSS, HTML
+- Did NOT interact with the browser url, including hash fragment
+- Did NOT include files in your PR that are outside the assignment (no IDE configs, `node_modules/`, etc)
+* Did not use external CSS libraries
 
